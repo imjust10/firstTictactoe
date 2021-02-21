@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+canvas {
+	border:1px solid #000000;
+	background-color: #000000;
+}
+</style>
+
+<script src="tictactoeFunction.js"></script>
+</head>
+<title>My TicTacToe</title>
+<body onload="tictactoe()">
+
+<br>
+<br>
+Player 1: <input type="text" id="player1No" maxlength="1" onkeypress="return isNumber(event)"  />
+<button onClick="player1Send()" id="player1Go" >Go</button>
+Player 2: <input type="text" id="player2No" maxlength="1"  onkeypress="return isNumber(event)" disabled />
+<button onClick="player2Send()" id="player2Go" disabled>Go</button>
+
+<br>
+<p id="result"></p>
+
+
+
+</body>
+</html>
